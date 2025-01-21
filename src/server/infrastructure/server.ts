@@ -7,8 +7,6 @@ export class Server {
   private _server;
 
   constructor() {
-    
-
     this._server = new ApolloServer({
       typeDefs,
       resolvers: getResolvers(),

@@ -4,10 +4,10 @@ import { ProductsRepository } from "../model/productsRepository.js";
 export function getProductsResolvers(productsRepository: ProductsRepository) {
   const resolvers = {
     Query: {
-      products: async () => new ProductsFetcher(productsRepository).exec(),
+      products: () => new ProductsFetcher(productsRepository).exec(),
     },
     Mutation: {
-      createProduct: async (_, { createProduct }) =>
+      createProduct: (_: any, { createProduct }) =>
         productsRepository.save(createProduct),
     },
   };
