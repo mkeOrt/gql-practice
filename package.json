@@ -1,0 +1,23 @@
+{
+  "name": "gql-practice",
+  "version": "1.0.0",
+  "main": "eslint.config.js",
+  "scripts": {
+    "compile": "tsc",
+    "compile-watch": "tsc --watch",
+    "start": "npm run compile && node ./dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "@apollo/server": "^4.11.3",
+    "graphql": "^16.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.7",
+    "typescript": "^5.7.3"
+  }
+}
